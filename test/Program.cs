@@ -13,16 +13,14 @@
         NewArray[index] = Convert.ToInt32(StringInput2);
         index++;
     }
-
+ Console.WriteLine();
     int index2 = 0;
 
     while(index2 <= length-1)
     {
-        Console.WriteLine($"{index2} элемент массива равен: {NewArray[index2]}");
+        Console.Write($"{NewArray[index2]} ");
         index2++;
     }
     }
 int[] SuperArray = new int[0];
 CreateNewArray(SuperArray);
-int[] UltraArray = new int[0];
-CreateNewArray(UltraArray);
