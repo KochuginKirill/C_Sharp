@@ -16,7 +16,7 @@ int number = ReadInt("Введите число дня недели (от 1 до
 
 if(number <= 7)
 {
-    if(number == 7 | number ==6)
+    if(number == 7 || number ==6)
     Console.WriteLine("Это выходной день");
     else
     {
