@@ -1,7 +1,7 @@
 ﻿int ReadInt(string message)
 {
     Console.WriteLine(" ");
-    int value = Convert.ToInt32(Console.Readline());
+    int value = Convert.ToInt32(Console.ReadLine());
     return value;
 }
 
@@ -16,7 +16,7 @@ bool Validate3sigh (int number)
 }
 
 int num = ReadInt("Введите число > ");
-if (Validate3sign(num))
+if (Validate3sigh(num))
 {
     int lastDigit = num % 10;
     Console.WriteLine($"Последняя цифра числа {num} равна {lastDigit}");
