@@ -47,7 +47,7 @@ int sqr(int number1, int number2)
     return pow;
 }
 
-int a = CheckInt("Введите число");
-int b = CheckInt("Введите степень");
+int a = CheckInt("Введите целое число");
+int b = CheckInt("Введите натуральное число для значения степени");
 int result = sqr(a, b);
 Console.WriteLine($"Число {a} в степени {b} = {result}");
