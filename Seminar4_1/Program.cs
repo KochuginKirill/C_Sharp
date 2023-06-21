@@ -4,7 +4,7 @@
 // 4 -> 10
 // 8 -> 36
 
-int Prompt(string message)
+int CheckInt(string message)
 {
     System.Console.Write($"{message} > ");
     string inputedStr = Console.ReadLine();
