@@ -34,8 +34,14 @@ int SumNumb(int NumberCount, int NewNumber)
 }
 
 int NewNumber = CheckInt("Введите целое положительное число");
+if(NewNumber > 0)
+{
 int CountNumber = len(NewNumber);
 int result = SumNumb(CountNumber, NewNumber);
 Console.WriteLine($"сумма цифр числа {NewNumber} равняется {result}");
-
+}
+else
+{
+    Console.WriteLine("Введено отрицательное число");
+}
 
