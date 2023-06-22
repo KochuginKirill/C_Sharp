@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("Напишите день недели в виде целого числа день недели");
-string input_string1 = Console.ReadLine();
+string input_string1 = Console.ReadLine()!;
 int number1 = Convert.ToInt32(input_string1);
 if (number1 == 1)
 {

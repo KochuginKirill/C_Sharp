@@ -20,7 +20,7 @@ int lengthnumber(int arg)     // Определяет длинну числа
 int redin(string tex)
 {
     Console.WriteLine(tex);
-    string number = Console.ReadLine();
+    string number = Console.ReadLine()!;
     int number2 = Convert.ToInt32(number);
     return number2;
 }

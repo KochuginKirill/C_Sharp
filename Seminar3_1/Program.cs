@@ -5,7 +5,7 @@
 int ReadInt(string message)
 {
     Console.Write($"{message} > ");
-    int value = int.Parse(Console.ReadLine());
+    int value = int.Parse(Console.ReadLine()!);
     return value;
 }
 

@@ -1,7 +1,12 @@
-﻿int CheckInt(string message)
+﻿int PositiveSum(int[] arr)
+  {
+    return arr.Where(x => x > 0).Sum();
+  }
+
+  int CheckInt(string message)
 {
     System.Console.Write($"{message} > ");
-    string InputStr = Console.ReadLine()!;
+    string InputStr = Console.ReadLine();
     int value;
     if (int.TryParse(InputStr, out value))
     {
@@ -12,7 +17,7 @@
     return 0;
 }
 
-int[] GenerateArray(string meassage)
+ int[] GenerateArray(string meassage)
 {
     Console.WriteLine(meassage);
     int len = CheckInt("Введите число элементов массива");
@@ -35,5 +40,10 @@ void PrintArray(int[] Arrey)
     }
 }
 
-int[] NewArray = GenerateArray("Данная программа поможет вам выбрать число элеметов массива и задать их максимальное и минимальное значение");
+
+
+int[] NewArray = GenerateArray("Найдем сумму положительных чисел массива");
 PrintArray(NewArray);
+int sum = PositiveSum(NewArray);
+Console.WriteLine();
+Console.WriteLine(sum);

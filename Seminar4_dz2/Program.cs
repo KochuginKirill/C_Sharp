@@ -1,7 +1,7 @@
 ﻿int CheckInt(string message)
 {
     System.Console.Write($"{message} > ");
-    string InputStr = Console.ReadLine();
+    string InputStr = Console.ReadLine()!;
     int value;
     if (int.TryParse(InputStr, out value))
     {

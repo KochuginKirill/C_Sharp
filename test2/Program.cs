@@ -7,7 +7,7 @@
     while(index <= length-1)
     {
         Console.WriteLine($"Напишите {index} элемент массива");
-        string StringInput2 = Console.ReadLine();
+        string StringInput2 = Console.ReadLine()!;
         NewArray[index] = Convert.ToInt32(StringInput2);
         index++;
     }
