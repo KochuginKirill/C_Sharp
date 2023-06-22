@@ -7,7 +7,7 @@
 int ReadInt(string message)
 {
     Console.WriteLine(message);
-    string ReadString = Console.ReadLine();
+    string ReadString = Console.ReadLine()!;
     int number = Convert.ToInt32(ReadString);
     return number;
 }
