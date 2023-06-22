@@ -42,7 +42,7 @@ int SumNumbers2(int number)
     return sum2;
 }
 
-int number = Prompt("Введите число");
+int number = CheckInt("Введите число");
 
 int sum = SumNumbers(number);
 System.Console.WriteLine(sum);
