@@ -14,6 +14,7 @@
 
 int[] GenerateArray(string meassage)
 {
+    Console.WriteLine(meassage);
     int len = CheckInt("Введите число элементов массива");
     int min = CheckInt("Введите минимальную числовую границу элемента массива");
     int max = CheckInt("Введите максимальную числовую границу элемента массива");
@@ -34,5 +35,5 @@ void PrintArray(int[] Arrey)
     }
 }
 
-int[] NewArray = GenerateArray("Данная программа поможет вам выбрать число элеметов массива и задать им максимальное и минимальное значение");
+int[] NewArray = GenerateArray("Данная программа поможет вам выбрать число элеметов массива и задать их максимальное и минимальное значение");
 PrintArray(NewArray);
