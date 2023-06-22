@@ -26,7 +26,7 @@ int[] GenerateArray(string meassage)
     return list1;
 }
 
-void PrintArrey(int[] Arrey)
+void PrintArray(int[] Arrey)
 {
     for (int i = 0; i < Arrey.Length; i++)
     {
@@ -34,4 +34,5 @@ void PrintArrey(int[] Arrey)
     }
 }
 
-int[] NewArray = GenerateArray();
+int[] NewArray = GenerateArray("Данная программа поможет вам выбрать число элеметов массива и задать им максимальное и минимальное значение");
+PrintArray(NewArray);
