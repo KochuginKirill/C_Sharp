@@ -1,10 +1,10 @@
 ﻿
-    void CreateNewArray(int[] NewArray)
+    int[] CreateNewArray(string message)
     {
     Console.WriteLine($"Введите число элементов массива");
     string StringInput1 = Console.ReadLine()!;
     int length = Convert.ToInt32(StringInput1);
-    NewArray = new int[length];
+    int[] NewArray = new int[length];
     int index = 0;
     while(index <= length-1)
     {
@@ -21,6 +21,8 @@
         Console.Write($"{NewArray[index2]} ");
         index2++;
     }
+    return NewArray;
     }
-int[] SuperArray = new int[0];
-CreateNewArray(SuperArray);
+    int[] superArray = CreateNewArray("Создадим массив");
+
+
