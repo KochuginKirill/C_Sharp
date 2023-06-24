@@ -23,8 +23,8 @@ int[] GenerateArray(int len, int min, int max)
 
 int CountNumb(int[] input)
     {
-        if(input == null || !input.Any()) // данный цикл позволяет проверить нет ли null во входящем значении
-        {                                 // .Any - при любом значеннии input
+        if(input == null)                 // данный цикл позволяет проверить нет ли null во входящем значении
+        {                                 
             return 0;                     // Возвращает 0
         }                                 // Я просто очень хотел разобраться как с null бороться
               
