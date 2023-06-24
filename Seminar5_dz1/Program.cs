@@ -30,7 +30,7 @@ int CountNumb(int[] input)
               
         int countNumber = input.Count(n => n % 2 == 0); // Count ведет счетчик в соответствии с условием после =>
                                                         // Страраюсь практиковаться в .Count .Where . Sum()
-        return countNumber;                             // Понимаю что здесь можно было просто циклом решить можно
+        return countNumber;                             // Понимаю что здесь можно было просто циклом решить
     }
 
 
