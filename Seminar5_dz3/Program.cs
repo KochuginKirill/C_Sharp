@@ -17,7 +17,7 @@ double [] GenerateArray(int len, double min, double max)
     Random rnd = new Random();
     for (int i = 0; i < list1.Length; i++)
     {
-        list1[i] = min + rnd.NextDouble() * max + 1; // Всеми способами пытался сократить число дробных знаков, но вышло не во всех числах, похоже перегрузка типа переменной
+        list1[i] = min + rnd.NextDouble() * max + 1;
     }
     return list1;
 }
