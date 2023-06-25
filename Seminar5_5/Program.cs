@@ -8,7 +8,7 @@
 int numberint(string text)                                     // Запрашивает число у пользователя и переводит его в int
 {
     System.Console.WriteLine(text);
-    string numint = Console.ReadLine();
+    string numint = Console.ReadLine()!;
     int numberint = Convert.ToInt32(numint);
     return numberint;
 }
