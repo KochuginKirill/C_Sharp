@@ -83,7 +83,6 @@ int [,] rotate(int[,] input)
         for(int j = 0; j < newMatrix.GetLength(1); j++)
         {
             newMatrix[i,j] = input[j, i];
-        
         }
     }
     return newMatrix;
