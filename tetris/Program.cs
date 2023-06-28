@@ -57,6 +57,12 @@ int[,] tShape = new int[,]
     {1, 1 ,1},
 };
 
+int[,] sShape = new int[,]
+{
+    {0, 1, 1},
+    {1, 1 ,0},
+};
+
 
 
 void Tetris(int[,] field)
@@ -83,10 +89,20 @@ int [,] rotate(int[,] input)
         for(int j = 0; j < newMatrix.GetLength(1); j++)
         {
             newMatrix[i,j] = input[j, i];
+            if(newMatrix.GetLength(0) < newMatrix.GetLength(1))
+            {
+                for(int i2 = 0; i2 <= newMatrix.GetLength(0); i2++)
+               {
+                   int chk = newMatrix[0, i2];
+                   newMatrix[0, i2] = newMatrix[1, i2];
+                   newMatrix[1, i2] = chk;
+               }
+            }
         }
     }
     return newMatrix;
 }
+
 
 Tetris(jShape);
 int[,] ShapeRotate = rotate(jShape);
