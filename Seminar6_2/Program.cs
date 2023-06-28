@@ -5,33 +5,36 @@
 //3  -> 11
 //2  -> 10
 
-int Inputed (string message) 
-{   
-  Console.WriteLine(message);
-  int number = Convert.ToInt32(System.Console.ReadLine());
-  return number;
+int CheckInt(string message)
+{
+    System.Console.Write($"{message} > ");
+    string InputStr = Console.ReadLine()!;
+    int value;
+    if (int.TryParse(InputStr, out value))
+    {
+        return value;
+    }
+    Console.WriteLine("Извините, но вы ввели не целое число");
+    Environment.Exit(0);
+    return 0;
 }
 
+string DecToBin(int n)
+{
+    if (n == 0)
+    return "0";
 
-string PrintArray (int [] array)
-{
-    string massifPrint = "[";
-    foreach (int item in array)
+    if (n / 2 > 0)
     {
-        massifPrint += $"{item}, ";
+        return DecToBin(n / 2) + (char)(n % 2 + '0');
     }
-    return massifPrint.Substring(0, massifPrint.Length-2)+"]";
-}
-int [] Result(int number)
-{
-    int [] array = new int [8];
-    for (int i = array.Length-1; i >= 0; i--)
+    else
     {
-        array[i] = number%2;
-        number = number/2;
+        return ""+ (char)(n % 2 + '0');
     }
-    return array;
 }
-int number = Inputed("Введите число: ");
-int [] massif = Result(number);
-Console.WriteLine(PrintArray(massif));
+
+int num = CheckInt("Введите число для перевода в двоичную систему из десятичной");
+int endResult = Convert.ToInt32(DecToBin(num));
+Console.WriteLine();
+Console.WriteLine(endResult);
