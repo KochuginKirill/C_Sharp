@@ -2,7 +2,7 @@
 //которая будет создавать копию заданного массива 
 //с помощью поэлементного копирования.
 
-nt[] GenerateArray(int len, int min, int max)
+int[] GenerateArray(int len, int min, int max)
 {
     int[] answer = new int[len];
     Random rnd = new Random();
