@@ -50,7 +50,7 @@ double[] ColumnAvg(int[,] numbers)
     return result;
 }
 
-int[,] newArray = GenerateArray2D(3,3);
+int[,] newArray = GenerateArray2D(3,5);
 PrintArray2D(newArray);
 double[] output = ColumnAvg(newArray);
 Console.WriteLine("Среднее арифметическое каждого столбца: ");
