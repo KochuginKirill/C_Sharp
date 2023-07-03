@@ -6,12 +6,6 @@
 // 8   4   2
 // Сумма элементов главной диагонали: 1+9+2 = 12
 
-int ReadInt(string message)
-{
-    System.Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
-
 void PrintArray2D(int[,] numbers)
 {
     for (int i = 0; i < numbers.GetLength(0); i++)

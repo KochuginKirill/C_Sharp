@@ -2,12 +2,6 @@
 // Найдите элементы, у которых обе позиции чётные, 
 // и замените эти элементы на их квадраты.
 
-int ReadInt(string message)
-{
-    System.Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
-
 void PrintArray2D(int[,] numbers)
 {
     for (int i = 0; i < numbers.GetLength(0); i++)
