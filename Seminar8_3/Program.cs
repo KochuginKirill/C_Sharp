@@ -34,16 +34,6 @@ int[] ArrayDict(int[,] array)
     return Dict;
 }
 
-int[] ArrayDictSecond(int [,] array)
-{
-    int [] Dict = new int[10];
-    foreach (int elem in array)
-    {
-        Dict[elem]++;
-    }
-    return Dict;
-}
-
 void PrintInsertedArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)

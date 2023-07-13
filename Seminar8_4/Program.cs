@@ -1,11 +1,5 @@
 ﻿//Задача 4: Задайте двумерный массив из целых чисел. 
 //Напишите программу, которая удалит строку и столбец, на пересечении которых расположен наименьший элемент массива.
-int Inputed(string message)
-{
-    Console.WriteLine(message);
-    int number = Convert.ToInt32(System.Console.ReadLine());
-    return number;
-}
 
 int[,] GenerateInsertedArray(int rows, int columns, int min, int max)
 {
